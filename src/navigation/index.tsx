@@ -60,8 +60,8 @@ const Navigator = ({ theme }: { theme: TTheme }) => {
             component={DetailScreen}
             name={R.routes.SCREEN_DETAIL}
             options={{
-              title: 'Detail',
-              headerShown: true,
+              // title: 'Detail',
+              // headerShown: true,
               headerTitleAlign: 'center',
               headerBackTitleVisible: false,
               cardStyle: { backgroundColor: 'white' },

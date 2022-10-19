@@ -1,8 +1,7 @@
 import { createStyles } from 'utils/createStyles'
 
 export default createStyles(colors => ({
-  detail: {
-    color: colors.blue,
-    fontSize: 35,
+  container: {
+    backgroundColor: colors.main,
   },
 }))
