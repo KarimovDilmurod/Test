@@ -73,4 +73,8 @@ export default createStyles(colors => ({
   tesx: {
     color: colors.red,
   },
+  scrool: {
+    // marginBottom: '20@vs',
+    // paddingVertical: '20@vs',
+  },
 }))
