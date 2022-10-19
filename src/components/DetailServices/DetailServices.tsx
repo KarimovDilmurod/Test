@@ -12,7 +12,7 @@ export const DetailItems = () => {
         <View style={styles.leftItem}>
           <View style={styles.ImageContainer}>
             <Image
-              source={require('../././../assets//images/Image.png')}
+              source={require('../././../assets//images/0.png')}
               style={styles.image}
             />
           </View>
