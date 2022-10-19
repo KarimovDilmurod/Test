@@ -17,7 +17,7 @@ export default createStyles(colors => ({
     backgroundColor: 'rgba(0,0,0,0.1)',
     width: '35@s',
     height: '32@vs',
-    borderRadius: '100@s',
+    borderRadius: '16@s',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -42,6 +42,7 @@ export default createStyles(colors => ({
     backgroundColor: 'white',
     marginTop: '12@s',
     borderRadius: '10@s',
+    marginBottom: '12@vs',
   },
   image: {
     width: '100%',

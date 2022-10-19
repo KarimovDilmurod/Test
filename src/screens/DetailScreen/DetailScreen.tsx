@@ -1,4 +1,5 @@
 // import Container from 'components/Container/Container'
+import { DetailInfo } from 'components/DetailInfo/DetailInfo'
 import { useStyles } from 'hooks/useStyles'
 import React from 'react'
 import { Image, StatusBar, Text, View } from 'react-native'
@@ -43,6 +44,7 @@ const DetailScreen = () => {
           </View>
         </View>
       </View>
+      <DetailInfo />
     </LinearGradient>
   )
 }
