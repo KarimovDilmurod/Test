@@ -14,7 +14,7 @@ const theme = {
       lightGray: '#FFF0F5',
       orange: 'orange',
 
-      backroundPrimary: '#fafafa',
+      backroundPrimary: '#FFFFFF',
       backroundSecondary: '#eeeeee',
 
       textPrimary: '#0B1F35',
@@ -50,7 +50,7 @@ const theme = {
       // iconSecondary: '#6D7986',
       // iconLine: '#53575E',
 
-      backroundPrimary: '#fafafa',
+      backroundPrimary: '#FFFFFF',
       backroundSecondary: '#eeeeee',
 
       textPrimary: '#0B1F35',
