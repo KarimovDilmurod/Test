@@ -2,7 +2,7 @@ export const background = '#FFFFFF'
 
 export const black = '#0B1F35'
 export const white = '#FFFFFF'
-export const grey = '#6D7986'
+export const grey = '#808089'
 export const lightGrey = '#B0B6BE'
 export const red = '#D64238'
 export const yellow = '#facd02'

@@ -2,18 +2,18 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { useColors } from 'hooks/useColors'
 import React from 'react'
 import R from 'res'
-import CatalogScreen from 'screens/Catalog/CatalogScreen'
+import StoresScreen from 'screens/Store'
 import { getDefaultScreenOptions } from 'utils/navigation'
 
-const CatalogStack = () => {
+const StoresStack = () => {
   const Stack = createStackNavigator()
   const colors = useColors()
 
   return (
     <Stack.Navigator screenOptions={getDefaultScreenOptions(colors)}>
       <Stack.Screen
-        component={CatalogScreen}
-        name={R.routes.SCREEN_CATALOG}
+        component={StoresScreen}
+        name={R.routes.SCREEN_STORES}
         options={{
           cardStyle: {
             backgroundColor: colors.backroundPrimary,
@@ -25,4 +25,4 @@ const CatalogStack = () => {
   )
 }
 
-export default CatalogStack
+export default StoresStack

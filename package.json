@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "adb reverse tcp:9090 tcp:9090 && yarn react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "yarn react-native start --reset-cache",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint ./src/ --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^4.4.3",

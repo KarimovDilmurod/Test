@@ -10,7 +10,9 @@ import R from 'res'
 import { TTheme } from 'res/theme'
 import DetailScreen from 'screens/DetailScreen'
 import HomeScreen from 'screens/Home'
-import ProfileScreen from 'screens/Profile/ProfileScreen'
+import OrderScreen from 'screens/Order'
+import ProfileScreen from 'screens/Profile'
+import StoresScreen from 'screens/Store'
 import { TNavigationParams } from 'types/navigation'
 
 const Navigator = ({ theme }: { theme: TTheme }) => {
@@ -48,6 +50,24 @@ const Navigator = ({ theme }: { theme: TTheme }) => {
           <RootStack.Screen
             component={ProfileScreen}
             name={R.routes.SCREEN_PROFILE}
+            options={{
+              headerShown: false,
+              headerTitleAlign: 'center',
+              headerBackTitleVisible: false,
+            }}
+          />
+          <RootStack.Screen
+            component={OrderScreen}
+            name={R.routes.SCREEN_ORDER}
+            options={{
+              headerShown: false,
+              headerTitleAlign: 'center',
+              headerBackTitleVisible: false,
+            }}
+          />
+          <RootStack.Screen
+            component={StoresScreen}
+            name={R.routes.SCREEN_STORES}
             options={{
               headerShown: false,
               headerTitleAlign: 'center',

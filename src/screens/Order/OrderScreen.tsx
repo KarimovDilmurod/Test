@@ -2,16 +2,13 @@ import { useStyles } from 'hooks/useStyles'
 import React from 'react'
 import { Text, View } from 'react-native'
 
-import stylesConfig from './HomeScreen.styles'
+import stylesConfig from './OrderScreen.styles'
 
-const HomeScreen = () => {
+export default function OrderScreen() {
   const styles = useStyles(stylesConfig)
-
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>home</Text>
+      <Text style={styles.text}>Order</Text>
     </View>
   )
 }
-
-export default HomeScreen
