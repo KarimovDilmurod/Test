@@ -68,6 +68,7 @@ const DetailScreen = () => {
         <OnlineReservation />
 
         <DetailInfo />
+        <DetailInfo />
       </LinearGradient>
     </ScrollView>
   )
