@@ -2,29 +2,27 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { useColors } from 'hooks/useColors'
 import React from 'react'
 import R from 'res'
-import HomeScreen from 'screens/Home'
+import StoresScreen from 'screens/Store'
 import { getDefaultScreenOptions } from 'utils/navigation'
 
-const HomeStack = () => {
+const StoresStack = () => {
   const Stack = createStackNavigator()
   const colors = useColors()
 
   return (
     <Stack.Navigator screenOptions={getDefaultScreenOptions(colors)}>
       <Stack.Screen
-        component={HomeScreen}
-        name={R.routes.SCREEN_HOME}
+        component={StoresScreen}
+        name={R.routes.SCREEN_STORES}
         options={{
           cardStyle: {
             backgroundColor: colors.backroundPrimary,
           },
           headerShown: false,
-          headerTitleAlign: 'center',
-          title: 'Mobile Market',
         }}
       />
     </Stack.Navigator>
   )
 }
 
-export default HomeStack
+export default StoresStack

@@ -21,8 +21,8 @@ const theme = {
       textSecondary: '#6D7986',
       textTertiary: '#B0B6BE',
 
-      iconPrimary: '#0B1F35',
-      iconSecondary: '#6D7986',
+      iconPrimary: '#808089',
+      iconSecondary: '#1A94FF',
       iconLine: '#D9DCDE',
     },
   },
@@ -57,8 +57,8 @@ const theme = {
       textSecondary: '#6D7986',
       textTertiary: '#B0B6BE',
 
-      iconPrimary: '#0B1F35',
-      iconSecondary: '#6D7986',
+      iconPrimary: '#808089',
+      iconSecondary: '#1A94FF',
       iconLine: '#D9DCDE',
     },
   },
