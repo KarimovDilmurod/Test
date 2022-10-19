@@ -109,9 +109,9 @@ const Tabs: React.FC<IProps> = ({ route }) => {
           tabBarButton: CustomTabButton,
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <R.icons.StoresIcon color={colors.iconSecondary} />
+              <R.icons.OrderIcon color={colors.iconSecondary} />
             ) : (
-              <R.icons.StoresIcon color={colors.iconPrimary} />
+              <R.icons.OrderIcon color={colors.iconPrimary} />
             ),
         }}
         name={R.routes.STACK_ORDER}
