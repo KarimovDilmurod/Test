@@ -4,7 +4,7 @@ import { Image, Text, View } from 'react-native'
 
 import stylesConfig from './DetailServices.styles'
 
-export const DetailItems = () => {
+export const DetailServices = () => {
   const styles = useStyles(stylesConfig)
   return (
     <View style={styles.container}>

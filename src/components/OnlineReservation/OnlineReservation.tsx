@@ -12,6 +12,7 @@ export const OnlineReservation = () => {
         <View style={styles.itemContent}>
           <View style={styles.textContainer}>
             <Text style={styles.textTop}>Online reservation</Text>
+
             <Text style={styles.textBottom}>Table booking</Text>
           </View>
 

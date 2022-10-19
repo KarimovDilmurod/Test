@@ -3,11 +3,11 @@ import { createStyles } from 'utils/createStyles'
 export default createStyles(colors => ({
   container: {
     backgroundColor: colors.backroundPrimary,
-    width: '343@s',
     height: '156@vs',
     marginVertical: '10@vs',
     borderRadius: '10@s',
     justifyContent: 'center',
+    alignItems: 'center',
   },
   itemContainer: {
     width: '343@s',
@@ -57,7 +57,7 @@ export default createStyles(colors => ({
     fontWeight: 'bold',
   },
   br: {
-    width: '311@s',
+    width: '100%',
     height: '1@vs',
     backgroundColor: colors.textSecondary,
     marginBottom: '13@s',

@@ -49,16 +49,12 @@ export default createStyles(colors => ({
   },
   leftTextContainer: {
     height: '40@vs',
-    // borderColor: colors.textPrimary,
-    // borderWidth: '1@s',
     marginTop: '10@s',
     width: '108@s',
     justifyContent: 'center',
   },
   rightTextContainer: {
     height: '40@vs',
-    // borderColor: colors.textPrimary,
-    // borderWidth: '1@s',
     marginTop: '10@s',
     width: '108@s',
     justifyContent: 'center',

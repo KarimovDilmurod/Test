@@ -9,7 +9,6 @@ export default createStyles(colors => ({
     marginVertical: '10@vs',
   },
   itemContainer: {
-    width: '343@s',
     height: '75@vs',
     alignItems: 'center',
   },
