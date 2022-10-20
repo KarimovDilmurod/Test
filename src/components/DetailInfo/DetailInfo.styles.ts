@@ -10,36 +10,31 @@ export default createStyles(colors => ({
     alignItems: 'center',
   },
   itemContainer: {
-    width: '343@s',
     height: '124@vs',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   itemPhoneList: {
-    width: '343@s',
     height: '62@vs',
     alignItems: 'center',
     justifyContent: 'center',
   },
   itemAdressList: {
-    width: '343@s',
     height: '62@vs',
     alignItems: 'center',
     justifyContent: 'center',
   },
   adressContent: {
-    width: '311@s',
     height: '50@vs',
     flexDirection: 'row',
   },
   phoneContent: {
-    width: '311@s',
     height: '50@vs',
     flexDirection: 'row',
   },
   iconContainer: {
-    width: '28@s',
     height: '46@vs',
-    marginRight: '4@s',
+    marginHorizontal: '10@s',
   },
   textContainer: {
     width: '278@s',
@@ -57,9 +52,9 @@ export default createStyles(colors => ({
     fontWeight: 'bold',
   },
   br: {
-    width: '100%',
+    width: '325@s',
     height: '1@vs',
     backgroundColor: colors.textSecondary,
-    marginBottom: '13@s',
+    marginVertical: '8@vs',
   },
 }))
