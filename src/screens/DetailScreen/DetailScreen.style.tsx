@@ -44,8 +44,8 @@ export default createStyles(colors => ({
     borderRadius: '10@s',
   },
   image: {
-    width: '100%',
-    height: '343@vs',
+    width: '383@s',
+    height: '315@vs',
     resizeMode: 'stretch',
   },
   titleCard: {
@@ -75,5 +75,19 @@ export default createStyles(colors => ({
   scrool: {
     // marginBottom: '20@vs',
     // paddingVertical: '20@vs',
+  },
+  imageLenth: {
+    position: 'absolute',
+    backgroundColor: 'rgba(0,0,0, 0.5)',
+    width: '50@s',
+    height: '30@vs',
+    borderRadius: '30@s',
+    right: '10@s',
+    bottom: '87@vs',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    color: colors.white,
   },
 }))

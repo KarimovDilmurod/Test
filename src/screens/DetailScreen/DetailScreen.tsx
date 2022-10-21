@@ -3,8 +3,9 @@ import { DetailServices } from 'components/DetailServices/DetailServices'
 import { OnlineReservation } from 'components/OnlineReservation/OnlineReservation'
 import useSmartNavigation from 'hooks/useSmartNavigation'
 import { useStyles } from 'hooks/useStyles'
-import React from 'react'
+import React, { useState } from 'react'
 import {
+  Dimensions,
   Image,
   ScrollView,
   StatusBar,
@@ -13,12 +14,32 @@ import {
   View,
 } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
+import Carousel from 'react-native-reanimated-carousel'
 import R from 'res'
 import { BackIcon, CloseIcon, DodsIcon, HeartIcon } from 'res/icons'
 
 import styleConfig from './DetailScreen.style'
 
+const { width } = Dimensions.get('screen')
+
 const DetailScreen = () => {
+  const [activeIndex, setActiveIndex] = useState(0)
+  console.log(activeIndex)
+
+  const [data] = useState([
+    {
+      url: require('../../assets/images/001.jpeg'),
+    },
+    {
+      url: require('../../assets/images/004.png'),
+    },
+    {
+      url: require('../../assets/images/003.jpeg'),
+    },
+    {
+      url: require('../../assets/images/002.jpg'),
+    },
+  ])
   const styles = useStyles(styleConfig)
   const navigation = useSmartNavigation()
 
@@ -46,10 +67,22 @@ const DetailScreen = () => {
         </View>
 
         <View style={styles.imageCard}>
-          <Image
-            source={require('./../../assets/images/image.png')}
-            style={styles.image}
+          <Carousel
+            loop={false}
+            data={data}
+            renderItem={({ item, index }) => (
+              <View key={index} style={styles.image}>
+                <Image source={item.url} style={styles.image} />
+              </View>
+            )}
+            width={width}
+            height={340}
+            onSnapToItem={index => setActiveIndex(index + 1)}
           />
+
+          <View style={styles.imageLenth}>
+            <Text style={styles.text}>{`${activeIndex}/${data.length}`}</Text>
+          </View>
 
           <View style={styles.titleCard}>
             <View>
