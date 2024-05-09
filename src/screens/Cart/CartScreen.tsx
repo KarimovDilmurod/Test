@@ -58,7 +58,8 @@ export const CartScreen = () => {
           showsVerticalScrollIndicator={false}
           renderItem={({item, index}) => <CartItem key={index} item={item} />}
         />
-        <Button text="Заказать" handler={onPlaceOrder} />
+
+        {cart.length > 0 && <Button text="Заказать" handler={onPlaceOrder} />}
       </View>
     </SafeAreaView>
   );
