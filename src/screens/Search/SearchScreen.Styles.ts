@@ -5,9 +5,7 @@ import R from 'res';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: s(15),
     paddingVertical: vs(10),
-    borderRadius: s(4),
   },
   back: {
     paddingHorizontal: s(15),

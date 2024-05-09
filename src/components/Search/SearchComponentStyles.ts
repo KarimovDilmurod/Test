@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
   },
   search: {
     width: '70%',
-    height: vs(30),
+    height: vs(40),
     color: '#2C3E50',
     fontSize: ms(14),
     alignItems: 'center',
